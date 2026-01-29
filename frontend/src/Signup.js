@@ -16,7 +16,7 @@ export default function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/signup", form);
+      const res = await axios.post("https://registration-system-p3uw.onrender.com/api/signup", form);
       alert(res.data.message);
     } catch (err) {
       alert(err.response?.data?.message || "Signup failed");
